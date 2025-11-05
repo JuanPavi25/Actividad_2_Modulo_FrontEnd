@@ -1,36 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica Flexbox - Grid - MediaQuerys</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <div>
-        <h1>Mi Sitio</h1>
-    </div>
+    <header>
+        <div>
+            <h1>Tienda en Línea</h1>
+        </div>
+        <div>
+            <button id="toggleMenu">☰</button>
+        </div>
+    </header>
     <div>
         <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
         </nav>
     </div>
-  </header>
+    <div class="layout">
+        <aside id="sidebar">
+            <h2>Filtros</h2>
+            <ul>
+                <li>Categoría</li>
+                <li>Precio</li>
+                <li>Marca</li>
+            </ul>
+        </aside>
+        <main>
 
-  <section class="grid-section">
-    <div class="card">Tarjeta 1</div>
-    <div class="card">Tarjeta 2</div>
-    <div class="card">Tarjeta 3</div>
-    <div class="card">Tarjeta 4</div>
-    <div class="card">Tarjeta 5</div>
-  </section>
+            <section class="grid-section">
+                <div class="product-card">
+                    <img src="https://acdn-us.mitiendanube.com/stores/093/864/products/eb-tws-400-negro-5468264e3018f3daa417235015450851-1024-1024.jpg"
+                        alt="Producto 1" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Auriculares Bluetooth</h2>
+                        <p class="product-price">$129.900</p>
+                        <p class="product-description">Cancelación de ruido, estuche de carga rápida.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://cubitt.com.co/cdn/shop/files/RelojInteligenteCubittCT-VIVA1ObsidianBlack01.webp?v=1753078442&width=2048"
+                        alt="Producto 2" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Smartwatch Deportivo</h2>
+                        <p class="product-price">$249.000</p>
+                        <p class="product-description">Monitor de ritmo cardíaco, GPS integrado.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://jyrtechnology.com.co/wp-content/uploads/2020/05/MGJR-041-2.png" alt="Producto 3"
+                        class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Mouse Gamer RGB</h2>
+                        <p class="product-price">$89.900</p>
+                        <p class="product-description">Sensor óptico de alta precisión, luces personalizables.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 4" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Teclado Mecánico</h2>
+                        <p class="product-price">$199.000</p>
+                        <p class="product-description">Switches azules, retroiluminación LED.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 5" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Parlante Bluetooth</h2>
+                        <p class="product-price">$159.900</p>
+                        <p class="product-description">Sonido envolvente, batería de larga duración.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 6" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Tablet 10"</h2>
+                        <p class="product-price">$499.000</p>
+                        <p class="product-description">Pantalla HD, 64GB de almacenamiento.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 7" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Monitor 24"</h2>
+                        <p class="product-price">$699.000</p>
+                        <p class="product-description">Full HD, panel IPS, 75Hz.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 8" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Disco SSD 1TB</h2>
+                        <p class="product-price">$349.000</p>
+                        <p class="product-description">Alta velocidad de lectura y escritura.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 9" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Impresora Multifuncional</h2>
+                        <p class="product-price">$429.000</p>
+                        <p class="product-description">Imprime, escanea y copia con Wi-Fi.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 10" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Router Wi-Fi 6</h2>
+                        <p class="product-price">$299.000</p>
+                        <p class="product-description">Alta velocidad, cobertura extendida.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 11" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Webcam HD</h2>
+                        <p class="product-price">$119.000</p>
+                        <p class="product-description">Videollamadas nítidas, micrófono integrado.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 12" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Micrófono USB</h2>
+                        <p class="product-price">$189.000</p>
+                        <p class="product-description">Ideal para streaming y grabaciones.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 13" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Soporte para Laptop</h2>
+                        <p class="product-price">$59.900</p>
+                        <p class="product-description">Ergonómico, ajustable en altura.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 14" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Kit de Herramientas</h2>
+                        <p class="product-price">$89.000</p>
+                        <p class="product-description">45 piezas, ideal para mantenimiento técnico.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Producto 15" class="product-image" />
+                    <div class="product-info">
+                        <h2 class="product-title">Cargador Rápido USB-C</h2>
+                        <p class="product-price">$39.900</p>
+                        <p class="product-description">Compatible con múltiples dispositivos.</p>
+                    </div>
+                </div>
 
-  <footer>
-    <p>© 2025 Juan - Práctica de CSS Layouts</p>
-  </footer>
 
+                <!--                 <div class="card">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Producto" class="product-image" />
+                        <div class="product-info">
+                            <h2 class="product-title">Auriculares Bluetooth</h2>
+                            <p class="product-price">$129.900</p>
+                            <p class="product-description">Auriculares inalámbricos con cancelación de ruido y estuche de carga rápida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">Tarjeta 2</div>
+                <div class="card">Tarjeta 3</div>
+                <div class="card">Tarjeta 4</div>
+                <div class="card">Tarjeta 5</div> -->
+            </section>
+
+        </main>
+    </div>
+    <footer>
+        <p>© 2025 Juan - Práctica de CSS Layouts</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
